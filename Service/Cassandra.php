@@ -39,6 +39,6 @@ class Cassandra
         $error = $this->connection->errorInfo();
 
         if ($error[1])
-            throw new \Exception( 'Cassandra ['. $error[0] .':'. $error[1] .'] '. $error[2] );
+            throw new \Exception('Cassandra ['. $error[0] .':'. $error[1] .'] '. $error[2]);
     }
 }
