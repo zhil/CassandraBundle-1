@@ -1,6 +1,6 @@
 parameters:
     cassandra.nodes: host=localhost;port=9160
-    cassandra.keyspace: minecraft
+    cassandra.keyspace: minecraft_md
 
 services:
     cassandra:
