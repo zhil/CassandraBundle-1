@@ -2,6 +2,9 @@
 
 namespace Mmd\CassandraBundle\Service;
 
+/**
+ * @method PDOStatement prepare
+ */
 class Cassandra
 {
     protected $nodes        = '';
@@ -37,20 +40,11 @@ class Cassandra
         if ($error[1] !== null)
             throw new \Exception('Cassandra ['. $error[0] .':'. $error[1] .'] '. $error[2]);
     }
-
-    /**
-     * PDO Driver adds some messy bytes to the end or begin of the strings
-     */
-    public function fixMessyBytes($object)
-    {
-        foreach (get_object_vars($object) as $name => $value) {
-            $object->{$name} = is_string($value) ? trim($value) : $value;
-        }
-
-        return $object;
-    }
 }
 
+/**
+ * @method execute
+ */
 class PDOStatement
 {
     protected $stmt = null;
