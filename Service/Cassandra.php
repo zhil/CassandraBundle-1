@@ -3,7 +3,7 @@
 namespace Mmd\CassandraBundle\Service;
 
 /**
- * @method PDOStatement prepare
+ * @method \PDOStatement prepare
  */
 class Cassandra
 {
