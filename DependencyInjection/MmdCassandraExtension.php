@@ -1,6 +1,6 @@
 <?php
 
-namespace Mmd\CassandraBundle\DependencyInjection;
+namespace Mmd\Bundle\CassandraBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

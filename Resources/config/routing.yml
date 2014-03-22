@@ -1,3 +1,0 @@
-mmd_cassandra_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: MmdCassandraBundle:Default:index }

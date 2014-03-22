@@ -4,5 +4,5 @@ parameters:
 
 services:
     mmd.cassandra:
-        class:      Mmd\CassandraBundle\Service\Cassandra
+        class:      Mmd\Bundle\CassandraBundle\Service\Cassandra
         arguments:  [%cassandra.nodes%, %cassandra.keyspace%]

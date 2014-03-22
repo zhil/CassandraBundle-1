@@ -1,6 +1,6 @@
 <?php
 
-namespace Mmd\CassandraBundle\Service;
+namespace Mmd\Bundle\CassandraBundle\Service;
 
 /**
  * @method \PDOStatement prepare

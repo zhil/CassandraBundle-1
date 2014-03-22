@@ -1,6 +1,6 @@
 <?php
 
-namespace Mmd\CassandraBundle;
+namespace Mmd\Bundle\CassandraBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
