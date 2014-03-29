@@ -5,11 +5,21 @@ Apache Cassandra PDO
 
 ## Installation
 
-Include in `AppKernel.php`
+* Include in `AppKernel.php`
 
-```php
-new Mmd\Bundle\CassandraBundle\MmdCassandraBundle(),
-```
+  ```php
+  new Mmd\Bundle\CassandraBundle\MmdCassandraBundle(),
+  ```
+
+* Configure parameters in `app/config/parameters.yml`
+
+  ```yml
+  parameters:
+      #...
+
+      mmd.cassandra.nodes: host=localhost;port=9160
+      mmd.cassandra.keyspace: my_keyspace
+  ```
 
 ## Usage
 
@@ -18,4 +28,10 @@ new Mmd\Bundle\CassandraBundle\MmdCassandraBundle(),
  * @var \Mmd\Bundle\CassandraBundle\Service\Cassandra $cassandra
  */
 $cassandra = $this->get('mmd.cassandra');
+
+$stmt = $cassandra->prepare("SELECT id FROM my_table WHERE id = :id LIMIT 1;");
+$stmt->bindValue(':id', $id);
+$stmt->execute();
+
+$row = $stmt->fetchObject();
 ```
