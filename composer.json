@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "Apache Cassandra PDO",
     "keywords": ["apache cassandra", "cassandra", "PDO"],
-    "homepage": "https://github.com/minecraft-md/CassandraBundle",
+    "homepage": "https://github.com/MmdBundles/CassandraBundle",
     "license": "MIT",
     "authors": [
         {
