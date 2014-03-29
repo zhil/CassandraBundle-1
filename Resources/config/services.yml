@@ -1,8 +1,8 @@
 parameters:
-    cassandra.nodes: host=host;port=9160
-    cassandra.keyspace: minecraft_md
+    mmd.cassandra.nodes: host=localhost;port=9160
+    mmd.cassandra.keyspace: my_keyspace
 
 services:
     mmd.cassandra:
         class:      Mmd\Bundle\CassandraBundle\Service\Cassandra
-        arguments:  [%cassandra.nodes%, %cassandra.keyspace%]
+        arguments:  [%mmd.cassandra.nodes%, %mmd.cassandra.keyspace%]
