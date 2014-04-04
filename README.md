@@ -1,7 +1,7 @@
 CassandraBundle
 ===============
 
-Apache Cassandra PDO
+[Apache Cassandra PDO](https://github.com/Orange-OpenSource/YACassandraPDO)
 
 ## Installation
 
