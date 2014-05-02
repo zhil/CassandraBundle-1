@@ -5,7 +5,7 @@ namespace Mmd\Bundle\CassandraBundle\Service;
 /**
  * @method \PDOStatement prepare
  */
-class Cassandra
+class CassandraPDO
 {
     protected $nodes        = '';
     protected $keyspace     = '';

@@ -3,6 +3,6 @@ parameters:
     mmd.cassandra.keyspace: my_keyspace
 
 services:
-    mmd.cassandra:
-        class:      Mmd\Bundle\CassandraBundle\Service\Cassandra
+    mmd.cassandra_pdo:
+        class:      Mmd\Bundle\CassandraBundle\Service\CassandraPDO
         arguments:  [%mmd.cassandra.nodes%, %mmd.cassandra.keyspace%]
